@@ -1,6 +1,8 @@
 jQuery(document).ready(function() {
 
-	// If you are already using the custom link in Summon and don't want to lose it, you can add it back in with the following. Just be sure to replace the href and the anchor's value with your own. //
+	/* If you are already using the custom link in Summon and don't want to lose it, you can add it back in 
+	with the following. Just be sure to replace the href and the anchor's value with your own. If you
+	aren't using the custom link, then omit this next line */
 	
 	$("#topbar").find(".link").prepend('<a href="http://library.owu.edu/summon.html">Search OhioLINK books</a>');
 
