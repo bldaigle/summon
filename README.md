@@ -1,6 +1,3 @@
-summon
-======
-
 The following is based on a tip from Matthew Reidsma at Grand Valley State University Libraries.
 https://github.com/gvsulib/Summon-Stats#adding-the-script-to-summon
 
