@@ -7,7 +7,7 @@ jQuery(document).ready(function() {
 	$("#topbar").find(".link").prepend('<a href="http://library.owu.edu/summon.html">Search OhioLINK books</a>');
 
 
-  // Fix the broken saved items bar at the bottom of the page //
+  	// Fix the broken saved items bar at the bottom of the page //
 	
 	if($("#dock-container").length > 0) {
 	 
