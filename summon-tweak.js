@@ -9,7 +9,6 @@ jQuery(document).ready(function() {
   	// Fix the broken saved items bar at the bottom of the page //
 	
 	if($("#dock-container").length > 0) {
-	 
 	  $("body").append('<style>#dock-container{position:fixed !important;}</style>');
 	}
 });
