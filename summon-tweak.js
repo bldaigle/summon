@@ -1,7 +1,7 @@
 jQuery(document).ready(function() {
 
     // Add an OhioLINK link to the top of the page
-    $("#topbar").find(".link").prepend('<a id="ohiolink_search" href="#">Search OhioLINK books</a>');
+    $("#topbar").find(".link").prepend('<a id="ohiolink_search" href="#">Search OhioLINK Books</a>');
 
     // Build the OhioLINK search URL
     $('a#ohiolink_search').click(function() {
