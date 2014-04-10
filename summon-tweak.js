@@ -1,12 +1,12 @@
 jQuery(document).ready(function() {
 
-    // Add an OhioLINK link to the top of the page
-    $("#topbar").find(".link").prepend('<a id="ohiolink_search" href="#">Search OhioLINK Books</a>');
+	// Add an OhioLINK link to the top of the page
+	$("#topbar").find(".link").prepend('<a id="ohiolink_search" href="#">Search OhioLINK books</a>');
 
-    // Build the OhioLINK search URL
+	// Build the OhioLINK search URL
     $('a#ohiolink_search').click(function() {
-        var hash = window.location.search.slice(1);
-        var array = hash.split("&");
+        var parameters = window.location.search.slice(1);
+        var array = parameters.split("&");
 
         var values, form_data = {};
 
