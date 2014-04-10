@@ -1,14 +1,22 @@
 jQuery(document).ready(function() {
 
-	/* If you are already using the custom link in Summon and don't want to lose it, you can add it back in 
-	with the following. Just be sure to replace the href and the anchor's value with your own. If you
-	aren't using the custom link, then omit this next line */
-	
-	$("#topbar").find(".link").prepend('<a href="http://library.owu.edu/summon.html">Search OhioLINK books</a>');
+    // Add an OhioLINK link to the top of the page
+    $("#topbar").find(".link").prepend('<a id="ohiolink_search" href="#">Search OhioLINK books</a>');
 
-  	// Fix the broken saved items bar at the bottom of the page //
-	
-	if($("#dock-container").length > 0) {
-	  $("body").append('<style>#dock-container{position:fixed !important;}</style>');
-	}
+    // Build the OhioLINK search URL
+    $('a#ohiolink_search').click(function() {
+        var hash = window.location.search.slice(1);
+        var array = hash.split("&");
+
+        var values, form_data = {};
+
+        for (var i = 0; i < array.length; i += 1) {
+            values = array[i].split("=");
+            form_data[values[0]] = values[1];
+        }
+
+        var searchterm = form_data['s.q'];
+        window.location.href = 'http://olc1.ohiolink.edu/search/X?SEARCH=' + searchterm;
+    });
+
 });
